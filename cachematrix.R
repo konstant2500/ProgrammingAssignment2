@@ -65,8 +65,8 @@ cacheSolve <- function(x, ...) {
    # Assign the x$getcacheInverse from the makeCacheMatrix function to cacheInverse 
    # (may contain the inverse or may contain NULL)
    cacheInverse <- x$getcacheInverse()
-	
-	# Test if cacheInverse is NOT NULL..
+   
+   # Test if cacheInverse is NOT NULL..
    if(!is.null(cacheInverse)) {
       # If NULL test is TRUE, then matrix inverse already calculated, 
       # thus get inverse from cache, and display message.
