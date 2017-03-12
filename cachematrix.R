@@ -7,7 +7,7 @@
 ## TESTING and VERIFICATION
 ##    Code tested with Alan Berger's post on the Coursera week 3 discussion forum,  
 ##       "Simple test matrices for the lexical scoping programming assignment"
-##       Correct output as per post verified. 
+##       Correct output, as per post, verified. 
 
 
 ## --------------------------------------------------------------------------
