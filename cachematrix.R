@@ -1,6 +1,8 @@
 ## OVERALL DESCRIPTION OF WHAT THESE 2 FUNCTIONS DO:
-## (1) The makeCacheMatrix and cacheSolve functions work as a pair to create a special "matrix" object that can cache its inverse, 
-##       so that time consuming computation of the inverse does not have to be repeated if the contents of the matrix remains unchanged.
+## (1) The makeCacheMatrix and cacheSolve functions work as a pair 
+##       to create a special "matrix" object that can cache its inverse, 
+##       so that time consuming computation of the inverse does not have to be repeated 
+##       if the contents of the matrix remains unchanged.
 
 
 ## --------------------------------------------------------------------------
@@ -12,7 +14,8 @@
 ##    (2) get the matrix
 ##    (3) set the inverse
 ##    (4) get the inverse
-## The 'list' (last statement), contains the 4 set & get functions above, and serves as input ('x') to cacheSolve
+## The 'list' (last statement), contains the 4 set & get functions above, 
+##    and serves as input ('x') to cacheSolve
 
 makeCacheMatrix <- function(x = matrix()) {
    
@@ -49,7 +52,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ##    (created and returned by the makeCacheMatrix function above). 
 ## If the inverse has already been calculated (the matrix has not changed), 
 ##    then cacheSolve retrieves the inverse from cache, as shown below:
-##    (1) The cacheSolve function below first checks to see if the inverse has already been calculated. 
+##    (1) The cacheSolve function below first checks 
+#           to see if the inverse has already been calculated. 
 ##    (2) If inverse has been calculated, cacheSolve retrieves inverse from cache, 
 ##          returns inverse, and exits, thus skipping the computation. 
 ##    (3) If inverse not calculated, cacheSolve calculates inverse of data, 
@@ -82,7 +86,6 @@ cacheSolve <- function(x, ...) {
    return(cacheInverse)
 				
 }
-
 
 # --------------------------------------------------------------------------
 
