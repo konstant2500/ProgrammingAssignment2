@@ -4,6 +4,11 @@
 ##       so that time consuming computation of the inverse does not have to be repeated 
 ##       if the contents of the matrix remains unchanged.
 
+## TESTING and VERIFICATION
+##    Code tested with Alan Berger's post on the Coursera week 3 discussion forum,  
+##       "Simple test matrices for the lexical scoping programming assignment"
+##       Correct output as per post verified. 
+
 
 ## --------------------------------------------------------------------------
 
@@ -26,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
    set <- function(y) {
       # use the <<- operator, to assign a value to an object 
       # in an environment different from the current environment
-      # (This is part of the R Scoping Rules).
+      # (This is part of the R Lexical Scoping Rules).
       x <<- y
       cacheInverse <<- NULL
    }
